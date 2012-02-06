@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name='adlibre',
+setup(name='django-adlibre',
       version='1.0',
       description='Miscellaneous Django apps and helpers',
       author='Adlibre Pty Ltd',
