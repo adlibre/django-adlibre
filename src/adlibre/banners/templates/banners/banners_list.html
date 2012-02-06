@@ -1,0 +1,17 @@
+<div id="slideshow_images_list" style="display:none">
+{% for image in banner.images.all %}
+    <img src="{{ image.get_image_url }}" width="{{ image.image_width }}" height="{{ image.image_height }}" />
+{% endfor %}
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    if ($('#slideshow_images_list') && ($('#slideshow_images_list').children().length == 1)) {
+        // 1 image exists. Show it.
+        $('#slideshow_images_list:first').show();
+    } else {
+        // set cycle if multiple images
+        $('#slideshow_images_list').show();
+        $("#slideshow_images_list").cycle({random: true});
+    };
+});
+</script>
