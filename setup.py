@@ -8,4 +8,5 @@ setup(name='django-adlibre',
       author='Adlibre Pty Ltd',
       author_email='code@adlibre.com.au',
       url='https://github.com/adlibre/django-adlibre',
+      install_requires = ["xhtml2pdf",],
      )
