@@ -1,8 +1,8 @@
+import os.path
 
 from django.db.models import Model
-
 from django.utils.encoding import force_unicode
-import os.path
+from django.template.defaultfilters import slugify
 
 
 class AutoSlug(object):
