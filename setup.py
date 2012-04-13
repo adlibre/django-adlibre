@@ -27,8 +27,9 @@ def find_packages(path, base="" ):
 
 
 setup(name='django-adlibre',
-      version='0.1.0',
+      version='0.1.1',
       description='Miscellaneous Django apps and helpers',
+      long_description=open('README.md').read(),
       author='Adlibre Pty Ltd',
       author_email='code@adlibre.com.au',
       url='https://github.com/adlibre/django-adlibre',
