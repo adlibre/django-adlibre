@@ -104,7 +104,7 @@ class RenameFilesModel(Model):
                     final_name = os.path.join(final_dest, '%s' % (self.pk,))
                     if keep_ext:
                         final_name += ext
-                if file_name != final_name:
+                if file_name != final_name and field.name != '':
                     field.storage.delete(final_name)
                     field.storage.save(final_name, field)
                     field.storage.delete(file_name)
