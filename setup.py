@@ -43,5 +43,5 @@ setup(name='django-adlibre',
           'Programming Language :: Python',
           'Framework :: Django',
       ],
-      install_requires=["xhtml2pdf",],
+      install_requires=["xhtml2pdf", "premailer"],
      )
