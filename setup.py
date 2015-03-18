@@ -27,7 +27,7 @@ def find_packages(path, base="" ):
 
 
 setup(name='django-adlibre',
-      version='0.1.1',
+      version='0.1.2',
       description='Miscellaneous Django apps and helpers',
       long_description=open('README.md').read(),
       author='Adlibre Pty Ltd',
@@ -43,5 +43,5 @@ setup(name='django-adlibre',
           'Programming Language :: Python',
           'Framework :: Django',
       ],
-      install_requires=["xhtml2pdf", "premailer"],
+      install_requires=["xhtml2pdf", "premailer", "lxml"],
      )
